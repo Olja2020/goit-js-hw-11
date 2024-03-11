@@ -27,12 +27,11 @@
 body {
   background-color: white;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.04em;
   color: #2e2f42;
-
   margin: 0 auto;
 
   padding-left: 15px;
@@ -56,29 +55,36 @@ ul {
   flex-wrap: wrap;
 }
 
-.gallery-item {
+.card {
   list-style-type: none;
 
   width: calc((100% - 52px) / 3);
+  display: flex;
+  flex-direction: column;
+
+  width: 360px;
+  height: 200px;
+  border: 1px solid #808080;
 }
 
 .gallery-image {
+  display: none;
   width: 100%;
 
-  height: 100%;
+  height: 70%;
 
   object-fit: cover;
 
   display: block;
 }
-.feedback-form {
+form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-input,
-textarea {
+input
+{
   width: 360px;
   height: 40px;
   border-radius: 4px;
@@ -88,9 +94,6 @@ textarea {
   letter-spacing: inherit;
 }
 
-textarea {
-  height: 80px;
-}
 
 button {
   display: flex;
@@ -108,5 +111,10 @@ button {
 }
 span {
   display: block;
-  margin-bottom: 6px;
+  
+}
+
+.list {
+  display: flex;
+
 }
