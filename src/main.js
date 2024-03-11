@@ -8,7 +8,7 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 import { renderUsers } from './js/render-functions';
-import { fetchImages } from './js/pixabay-api';
+//import { fetchImages } from './js/pixabay-api';
 
 const button = document.querySelector('button');
 const inputSearch = document.querySelector('.search');
