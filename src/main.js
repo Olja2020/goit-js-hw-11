@@ -15,13 +15,16 @@ const inputSearch = document.querySelector('.search');
 const imagesGallery = document.querySelector('.gallery');
 const form = document.querySelector('.form');
 
-const submitSearchImages = form.addEventListener('submit', function (e) {
-  e.preventDefault();
-  fetchImages();
-});
-
 const gallery = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   captionsData: 'alt',
 });
+
 gallery.refresh();
+
+const submitSearchImages = form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  imagesGallery.innerHTML = '';
+  fetchImages();
+  form.reset();
+});

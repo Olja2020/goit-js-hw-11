@@ -1,5 +1,7 @@
 //const { default: iziToast } = require('izitoast');
-
+import iziToast from 'izitoast';
+// Додатковий імпорт стилів
+import 'izitoast/dist/css/iziToast.min.css';
 const button = document.querySelector('button');
 const inputSearch = document.querySelector('.search');
 
@@ -37,11 +39,6 @@ export function fetchImages() {
 
       .catch(error => {
         console.log(error);
-        iziToast.error({
-          title: '',
-          message:
-            'Sorry, there are no images matching your search query. Please try again!',
-        });
       });
   }
 }
