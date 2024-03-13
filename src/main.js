@@ -14,7 +14,7 @@ const button = document.querySelector('button');
 const inputSearch = document.querySelector('.search');
 const imagesGallery = document.querySelector('.gallery');
 const form = document.querySelector('.form');
-
+const loader = document.querySelector('.loader');
 const gallery = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   captionsData: 'alt',
@@ -24,6 +24,7 @@ gallery.refresh();
 
 const submitSearchImages = form.addEventListener('submit', function (e) {
   e.preventDefault();
+  loader.style.display = 'block';
   imagesGallery.innerHTML = '';
   fetchImages();
   form.reset();
