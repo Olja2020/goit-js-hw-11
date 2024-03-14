@@ -6,7 +6,7 @@ const button = document.querySelector('button');
 const inputSearch = document.querySelector('.search');
 const loader = document.querySelector('.loader');
 import { renderUsers } from './render-functions';
-
+debugger
 const hideLoader = () => {
   loader.style.display = 'none';
 };
