@@ -15,17 +15,24 @@ const inputSearch = document.querySelector('.search');
 const imagesGallery = document.querySelector('.gallery');
 const form = document.querySelector('.form');
 const loader = document.querySelector('.loader');
+
+debugger
 const gallery = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   captionsData: 'alt',
 });
 
-gallery.refresh();
+// gallery.refresh();
+// const hideLoader = () => {
+//   loader.style.display = 'none';
+// };
 
 const submitSearchImages = form.addEventListener('submit', function (e) {
   e.preventDefault();
-  loader.style.display = 'block';
+  debugger
+  loader.style.display = 'flex';
   imagesGallery.innerHTML = '';
   fetchImages();
+  loader.style.display = 'none';
   form.reset();
 });

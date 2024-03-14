@@ -4,7 +4,7 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 const button = document.querySelector('button');
 const inputSearch = document.querySelector('.search');
-
+const loader = document.querySelector('.loader');
 import { renderUsers } from './render-functions';
 
 const hideLoader = () => {
@@ -37,7 +37,7 @@ export function fetchImages() {
             images: data.hits,
           };
           renderUsers(data.hits);
-          hideLoader();
+          
         }
       })
 

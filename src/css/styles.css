@@ -94,7 +94,7 @@ input {
 }
 
 button {
-  display: flex;
+  /* display: flex; */
   font: inherit;
   letter-spacing: inherit;
   font-weight: 500;
@@ -129,7 +129,7 @@ span {
   border: 3px solid #808080;
   border-bottom-color: transparent;
   border-radius: 50%;
-  display: flex;
+  display: none;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
   justify-content: center;
