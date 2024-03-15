@@ -3,7 +3,7 @@
 const imagesGallery = document.querySelector(".gallery");
 const form = document.querySelector('.form')
 
-import {renderUsers} from './pixabay-api';
+
 debugger
 export function renderUsers(images) {
     form.reset();
