@@ -2,8 +2,6 @@
 
 const imagesGallery = document.querySelector(".gallery");
 const form = document.querySelector('.form')
-
-
 debugger
 export function renderUsers(images) {
     form.reset();
