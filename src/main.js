@@ -28,7 +28,7 @@ const submitSearchImages = form.addEventListener('submit', function (e) {
   debugger
   loader.style.display = 'flex';
   imagesGallery.innerHTML = '';
-  fetchImages();
+  setTimeout(fetchImages, 3000);
   loader.style.display = 'none';
   form.reset();
 });
