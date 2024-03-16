@@ -18,14 +18,10 @@ const loader = document.querySelector('.loader');
 
 debugger
 const gallery = new SimpleLightbox('.gallery a', {
-  captionDelay: 250,
+  captionDelay: 850,
   captionsData: 'alt',
 });
 
-// gallery.refresh();
-// const hideLoader = () => {
-//   loader.style.display = 'none';
-// };
 
 const submitSearchImages = form.addEventListener('submit', function (e) {
   e.preventDefault();
