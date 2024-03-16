@@ -133,6 +133,7 @@ span {
   animation: rotation 1s linear infinite;
   justify-content: center;
   margin: 0 auto;
+  display: none;
 }
 
 @keyframes rotation {
