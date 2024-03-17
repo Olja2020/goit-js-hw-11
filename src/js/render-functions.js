@@ -1,13 +1,12 @@
+const imagesGallery = document.querySelector('.gallery');
+const form = document.querySelector('.form');
 
-
-const imagesGallery = document.querySelector(".gallery");
-const form = document.querySelector('.form')
-debugger
 export function renderUsers(images) {
-    form.reset();
-    
-    const markup = images.map(image => {
-        return `<div class="card">
+  form.reset();
+
+  const markup = images
+    .map(image => {
+      return `<div class="card">
         <a class="gallery-link" href="${image.largeImageURL}">
             <img class="gallery-image" src="${image.webformatURL}" alt="${image.tags}" />
           </a>
@@ -17,12 +16,11 @@ export function renderUsers(images) {
             <li class="item">Comments: <span>${image.comments}</span></li>
             <li class="item">Downloads: <span>${image.downloads}</span></li>
           </ul>
-          </div>`
-      })
-      .join("");
-  
-    imagesGallery.innerHTML = markup;
-    const lightbox = new SimpleLightbox('.gallery a');
-lightbox.refresh(); 
+          </div>`;
+    })
+    .join('');
 
-  }
+  imagesGallery.innerHTML = markup;
+  const lightbox = new SimpleLightbox('.gallery a');
+  lightbox.refresh();
+}
